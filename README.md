@@ -2,5 +2,4 @@
 This is a test repoository that I will try to manipulate using VSCode
 
 ## Sub Header
-Some Random text.
-Test 2 
+Some Random text. lol lmao
