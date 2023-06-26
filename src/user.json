@@ -1,0 +1,10 @@
+{"key": "key value pairs. The {} represents the beginning and end of objects. Use a comma after every pair for multiple entries like in arrays",
+"name": "Dhyeya",
+"favoriteNumber": 13,
+"isProgrammer": true,
+"hobbies": ["Weight Lifting", "Bowling", "(the favoriteNumber is an int and isProgrammer is boolean and hence they dont need double quotes)"],
+"friends": [{"name": "Taha",
+"favoriteNumber": 69,
+"isProgrammer": false,
+"hobbies": ["Gossipping", "Tiktok", "Finding problematic men", "(the value in friends is essentially an array of user objects where a different object is created for different friends, and this array of objects has another array in it for hobbies. This is called nesting of objects.)"]}]
+}

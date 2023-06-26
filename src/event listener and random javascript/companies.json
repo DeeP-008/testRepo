@@ -1,0 +1,14 @@
+[
+    {"companyName":"companyInfo",
+"companyName": "Apple, Inc.",
+"numEmployees": 80000,
+"name_CEO": "Tim Cook",
+"rating": 4.3
+},
+{
+    "companyName": "Meta Platforms, Inc.",
+    "numEmployees": 40000,
+    "name_CEO": null,
+    "rating": 4.09
+}
+]

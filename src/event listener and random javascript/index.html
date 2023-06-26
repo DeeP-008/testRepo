@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Example JSON file
+        </title>
+    </head>
+    <body>
+        <!--Anything we type in a JSON file can be read by javaScript so
+             when we copy the JSON file contents here in the script tag its read as JavaScript. 
+            When you launch the HTML file and go to Inspect -> console, you'll see 
+            the JSON contents of the companies array there. -->
+        <script type= "text/javascript">
+            let companies = [
+                {
+                "companyName":"companyInfo",
+                "companyName": "Apple, Inc.",
+                "numEmployees": 80000,
+                "name_CEO": "Tim Cook",
+                "rating": 4.3
+                },
+
+                {
+                "companyName": "Meta Platforms, Inc.",
+                "numEmployees": 40000,
+                "name_CEO": null,
+                "rating": 4.09
+                }
+                ]
+                console.log(companies [1].name_CEO);    //get the name of company CEO based on index number.
+                //console.log(JSON.parse(companies));
+                /*if you use `` at the beginning and end of companies array, it gets converted to a string
+                and when you console.log it, you only get a string output in web console.
+                That is why JSON.parse parses the string into JSON objects. You can avoid this step though
+                by not using a string array in the first place for this example, but in the cases you need that
+                JSON.parse is incredibly helpful */ 
+
+        </script>
+        
+        
+    </body>
+</html>

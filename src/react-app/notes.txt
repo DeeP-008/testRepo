@@ -1,0 +1,5 @@
+Most important commands for React
+npm start: start up the developmenet environment
+npm run build: Build our app, minifu all our files  and combone all our files so that we have a deploy-ready file that we can send on a server somewhere.
+
+The application starts at index.js.

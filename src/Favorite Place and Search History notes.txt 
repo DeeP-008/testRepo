@@ -26,3 +26,47 @@ own data. This implementation allows users to have their personalized favorite p
 their accounts. You can customize the data model and fields based on your specific requirements and the information you 
 want to store for each place.
 
+6/11
+
+Structure your Realtime Database
+
+    Determine the structure of your database. In this case, you want to store previously searched places for each user. You can structure it like this:
+        users
+            [user_id]
+                searched_places
+                    [search_id]
+                        place_name: "Place Name"
+                        timestamp: "2023-05-22T12:34:56Z"
+                    [search_id]
+                        place_name: "Another Place"
+                        timestamp: "2023-05-21T09:00:00Z"
+                favorites
+                    [favorite_id]
+                        place_name: "Favorite Place"
+                        timestamp: "2023-05-20T15:30:00Z"
+                    [favorite_id]
+                        place_name: "Another Favorite"
+                        timestamp: "2023-05-19T18:45:00Z"
+
+Step 4: Save previously searched places
+
+    When a user performs a search and you want to save it as a previously searched place:
+        Retrieve the currently logged-in user's ID from the authentication system.
+        Generate a unique ID for the search (e.g., using the push() method or generating a UUID).
+        Create a new child node under the user's searched_places node with the generated ID.
+        Set the desired data for the searched place (e.g., place_name, timestamp).
+        Save the data to the Realtime Database using the appropriate method provided by the Firebase SDK for your platform.
+
+Step 5: Retrieve previously searched places
+
+    To retrieve a user's previously searched places:
+        Retrieve the currently logged-in user's ID from the authentication system.
+        Read the searched_places node under the user's ID.
+        Iterate over the child nodes to access each previously searched place's data.
+
+Step 6: Update and delete previously searched places
+
+    To update or delete a previously searched place:
+        Retrieve the currently logged-in user's ID from the authentication system.
+        Access the specific child node under the searched_places node for the place you want to update or delete.
+        Update or delete the relevant data using the appropriate method provided by the Firebase SDK for your platform.
